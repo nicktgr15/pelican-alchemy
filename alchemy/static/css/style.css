@@ -125,3 +125,12 @@ hr {
     margin-right: 10px;
   }
 }
+
+.highlighttable{
+    width:100%;
+}
+
+.linenodiv pre{
+    color: #AAAAAA;
+    padding-left:10px;
+}
