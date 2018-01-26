@@ -134,3 +134,7 @@ hr {
     color: #AAAAAA;
     padding-left:10px;
 }
+
+.content {
+    text-align: justify;
+}
