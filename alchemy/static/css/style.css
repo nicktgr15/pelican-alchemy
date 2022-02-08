@@ -127,7 +127,15 @@ hr {
 }
 
 .highlighttable{
-    width:100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.highlighttable tbody {
+  display: table;
+  width: 100%;
 }
 
 .linenodiv pre{
