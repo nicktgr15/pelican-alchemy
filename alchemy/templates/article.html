@@ -47,5 +47,19 @@
     {{ article.content }}
   </div>
 </article>
+{% if ADSENSE_CLIENT is defined and ADSENSE_CLIENT and
+      ADSENSE_COMMENT_SLOT is defined and ADSENSE_COMMENT_SLOT %}
+<div class="article-ad article-ad-comments">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ ADSENSE_CLIENT }}"
+       data-ad-slot="{{ ADSENSE_COMMENT_SLOT }}"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{% endif %}
 {% include 'include/comments.html' %}
 {% endblock %}
