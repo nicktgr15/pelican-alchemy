@@ -18,8 +18,34 @@ a:hover {
 }
 
 blockquote {
-  color: #818a91;
-  font-style: italic;
+  position: relative;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem 1.25rem 2.5rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #0085a1;
+  color: #333;
+  font-style: normal;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+blockquote::before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: 12px;
+  font-size: 3rem;
+  color: rgba(0, 133, 161, .25);
+  line-height: 1;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+blockquote p + p {
+  margin-top: 1rem;
 }
 
 hr {
@@ -90,6 +116,10 @@ hr {
 
 .teaser .content p {
   margin-bottom: 0;
+}
+
+.article img.no-orient {
+  image-orientation: none;
 }
 
 .article header ul,
